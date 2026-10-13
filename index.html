@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA & CO. — Haute Horlogerie & High Luxury Atelier</title>
+  <meta name="description" content="Discover rare horology, handcrafted Tuscan leather, bespoke haute parfumerie, and certified fine jewelry from the master craftsmen at AURA & CO." />
+  <meta name="keywords" content="luxury watches, haute horlogerie, leather goods, fine jewelry, niche perfume, bespoke craftsmanship" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="AURA & CO. — Haute Horlogerie & High Luxury Atelier" />
+  <meta property="og:description" content="Rare horology, Tuscan leather, and bespoke fine jewelry crafted with uncompromising generational mastery." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#090a0e" />
+
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcements">
+    <div class="announcement-inner">
+      <div class="announcement-text">
+        <span>Complimentary Worldwide White-Glove Courier Delivery</span>
+        <span>Certificate of Sovereign Authenticity Included</span>
+        <span>Carbon-Neutral Insured Transit</span>
+      </div>
+      <div class="announcement-actions">
+        <div class="currency-selector" title="Select Display Currency">
+          <label for="global-currency-select">Currency:</label>
+          <select id="global-currency-select" aria-label="Select Currency">
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="PKR">PKR (₨)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="AURA & CO. Home">
+        <span class="logo-main">AURA &amp; CO.</span>
+        <span class="logo-sub">GENÈVE • ATELIER</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#catalog" class="nav-link active">Creations</a></li>
+          <li><a href="#atelier" class="nav-link">The Atelier</a></li>
+          <li><a href="#testimonials" class="nav-link">Patrons</a></li>
+          <li><a href="#faq" class="nav-link">Concierge FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons -->
+      <div class="header-actions">
+        <!-- Wishlist Button -->
+        <button class="action-btn" id="wishlist-trigger-btn" aria-label="View Private Wishlist" title="Private Collection">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="action-badge" id="wishlist-count-badge">0</span>
+        </button>
+
+        <!-- Shopping Bag Button -->
+        <button class="action-btn" id="cart-trigger-btn" aria-label="View Shopping Bag" title="Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="action-badge" id="cart-count-badge">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="action-btn mobile-menu-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop"></div>
+      <div class="hero-overlay-gradient"></div>
+
+      <div class="hero-content">
+        <div class="hero-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          The 2026 Haute Horlogerie &amp; Atelier Collection
+        </div>
+
+        <h1 class="hero-title">
+          Where <em>Timeless Mastery</em><br />Meets Rare Perfection
+        </h1>
+
+        <p class="hero-description">
+          Engineered for the discerning few. From manual-wind tourbillons hand-crafted in the Vallée de Joux to full-grain Tuscan leather and conflict-free diamond masterworks.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#catalog" class="btn btn-primary">
+            Explore Creations
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#atelier" class="btn btn-outline">
+            The Atelier Story
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">180+</div>
+            <div class="stat-label">Hours of Craft per Piece</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Certified Sovereign Provenance</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Private Salons Worldwide</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Propositions Features Strip -->
+    <section class="features-strip" aria-label="Brand Guarantees">
+      <div class="container features-grid">
+        <div class="feature-box">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4>White-Glove Delivery</h4>
+            <p>Armored courier &amp; insured personal handover.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4>Certified Authenticity</h4>
+            <p>GIA dossiers &amp; Swiss horological registry.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4>Lifetime Atelier Care</h4>
+            <p>Complimentary servicing, overhaul &amp; polishing.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 14 14"></polyline>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4>Private Concierge</h4>
+            <p>Direct 24/7 access to your personal curator.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">The Curated Vault</span>
+          <h2 class="section-title">Masterpieces of Rare Craftsmanship</h2>
+          <p class="section-subtitle">Each piece is individually numbered and produced in strictly limited annual editions.</p>
+        </div>
+
+        <!-- Catalog Toolbar & Filters -->
+        <div class="catalog-toolbar">
+          <div class="toolbar-top">
+            <div class="category-pills" role="tablist">
+              <button class="cat-pill active" data-category="all" role="tab">All Creations</button>
+              <button class="cat-pill" data-category="horology" role="tab">Haute Horlogerie</button>
+              <button class="cat-pill" data-category="leather" role="tab">Fine Leather</button>
+              <button class="cat-pill" data-category="parfumerie" role="tab">Haute Parfumerie</button>
+              <button class="cat-pill" data-category="jewelry" role="tab">Fine Jewelry</button>
+              <button class="cat-pill" data-category="eyewear" role="tab">Designer Eyewear</button>
+            </div>
+          </div>
+
+          <div class="toolbar-bottom">
+            <!-- Real-time Search -->
+            <div class="search-box-wrap">
+              <span class="search-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </span>
+              <input type="text" id="product-search-input" class="search-input" placeholder="Search by name, movement, material..." aria-label="Search creations" />
+              <button id="search-clear-btn" class="search-clear-btn" title="Clear Search">✕</button>
+            </div>
+
+            <!-- Price & Sort Controls -->
+            <div class="filter-controls-group">
+              <div class="price-slider-wrap">
+                <label for="price-range-slider">Max Price:</label>
+                <input type="range" id="price-range-slider" class="price-slider" min="500" max="10000" step="250" value="10000" />
+                <span id="price-display-val" style="color: var(--gold-300); font-weight: 600;">$ 10,000</span>
+              </div>
+
+              <div class="sort-select-wrap">
+                <label for="product-sort-select">Sort By:</label>
+                <select id="product-sort-select" class="sort-select" aria-label="Sort creations">
+                  <option value="featured">Featured Curations</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating">Patron Rating</option>
+                  <option value="newest">Newest Releases</option>
+                </select>
+              </div>
+
+              <div class="view-mode-toggle" aria-label="View Layout Toggle">
+                <button class="view-mode-btn active" data-view="grid" title="Grid Layout" aria-label="Grid View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                </button>
+                <button class="view-mode-btn" data-view="list" title="List Layout" aria-label="List View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Products Grid -->
+        <div class="products-grid" id="products-grid" aria-live="polite">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Atelier Heritage Section -->
+    <section class="atelier-section" id="atelier">
+      <div class="container">
+        <div class="atelier-grid">
+          <div class="atelier-imagery">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" 
+                 alt="Master watchmaker assembly at AURA Atelier" 
+                 class="atelier-main-img" 
+                 id="atelier-active-img" />
+            <div class="atelier-badge-seal">
+              <span id="atelier-seal-step">01</span>
+              <span>ATELIER DE GENÈVE</span>
+            </div>
+          </div>
+
+          <div class="atelier-content">
+            <span class="section-eyebrow">Generational Heritage</span>
+            <h2 class="section-title">The Art of the Extraordinary</h2>
+            <p style="color: var(--text-secondary); margin: 1.2rem 0 2rem; font-size: 1rem; line-height: 1.7;">
+              True luxury cannot be mass-produced. In an era of hurried consumerism, AURA &amp; CO. preserves the sacred traditions of hand-finishing, microscopic stone-setting, and organic pit tanning.
+            </p>
+
+            <div class="atelier-steps">
+              <div class="atelier-step-item active" data-step="0">
+                <span class="step-number">01</span>
+                <div class="step-details">
+                  <h4>Sovereign Provenance</h4>
+                  <p>Certified Fairmined gold, GIA conflict-free gemstones, and organic Tuscan hides sourced with ethical integrity.</p>
+                </div>
+              </div>
+
+              <div class="atelier-step-item" data-step="1">
+                <span class="step-number">02</span>
+                <div class="step-details">
+                  <h4>Atelier Handcraft</h4>
+                  <p>Over 180 hours of meticulous hand-chamfering, guilloché engraving, and traditional double-saddle stitching.</p>
+                </div>
+              </div>
+
+              <div class="atelier-step-item" data-step="2">
+                <span class="step-number">03</span>
+                <div class="step-details">
+                  <h4>Lifetime Concierge</h4>
+                  <p>Registered archive certificate, insured armored transit, and lifetime restoration at our Geneva workshop.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP Patron Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Private Patronage</span>
+          <h2 class="section-title">Words from Our Global Collectors</h2>
+          <p class="section-subtitle">Reflections from esteemed patrons who cherish timeless craftsmanship.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <blockquote class="testimonial-quote">
+              "The Chronographe Éternel arrived in a hand-lacquered walnut box with an authenticated certificate of origin. The finishing on the tourbillon cage easily rivals Patek and Vacheron. An absolute triumph."
+            </blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Lord Julian Hastings" class="author-avatar" />
+              <div class="author-info">
+                <h5>Lord Julian Hastings</h5>
+                <p>Horology Collector &amp; Patron • London</p>
+                <span class="verified-buyer">✓ Verified Acquisition</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <blockquote class="testimonial-quote">
+              "AURA's bespoke white-glove concierge is beyond anything I have experienced online. The leather holdall has traveled with me to Tokyo, Milan, and Zurich — the patina it has developed is stunning."
+            </blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="author-avatar" />
+              <div class="author-info">
+                <h5>Elena Rostova</h5>
+                <p>Architectural Director • Geneva</p>
+                <span class="verified-buyer">✓ Verified Acquisition</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <blockquote class="testimonial-quote">
+              "Santal Impérial is the pinnacle of haute parfumerie. Deep, mysterious, and extraordinarily long-lasting. I receive compliments everywhere from boardroom meetings in Manhattan to galas in Dubai."
+            </blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Tariq Al-Mansoor" class="author-avatar" />
+              <div class="author-info">
+                <h5>Tariq Al-Mansoor</h5>
+                <p>Private Equity Executive • Dubai</p>
+                <span class="verified-buyer">✓ Verified Acquisition</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concierge FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Client Services</span>
+          <h2 class="section-title">Frequently Consulted Inquiries</h2>
+          <p class="section-subtitle">Clear answers regarding acquisitions, delivery, certificates, and bespoke orders.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item open">
+            <button class="faq-question" type="button">
+              <span>How is white-glove courier delivery coordinated?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              Every acquisition exceeding our salon threshold is dispatched via insured, dedicated armored courier. Your personal concierge will contact you following acquisition to establish your preferred confidential date, hour, and private location for handover.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Are all gemstones and timepieces certified?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              Without exception. All diamonds carry individual GIA (Gemological Institute of America) dossiers detailing cut, color, clarity, and carat weight. Our horological movements receive individual chronometer certification and registered serial entry in our Geneva archives.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can pieces be tailored or monogrammed?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              Yes. We offer complimentary hot-stamp foil monogramming on all leather creations and bespoke caseback hand-engraving on our timepieces. Simply specify your desires in the order notes during checkout or contact your dedicated atelier curator.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What is the return and exchange policy?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              We offer a 30-day complimentary return policy. Provided the timepiece or creation remains in unworn condition with security tags and seals intact, our white-glove courier will retrieve the item directly from your residence at zero cost.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP Salon Newsletter -->
+    <section class="newsletter-section">
+      <div class="container newsletter-card">
+        <span class="section-eyebrow">Private Invitation</span>
+        <h2 class="section-title">Join the AURA &amp; CO. Private Gazette</h2>
+        <p class="section-subtitle">
+          Receive private invitations to private collector salons, confidential preview releases, and bespoke horological essays.
+        </p>
+
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" id="newsletter-email-input" class="newsletter-input" placeholder="Enter your confidential email..." required />
+          <button type="submit" id="newsletter-submit-btn" class="btn btn-primary">
+            Request Access
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Comprehensive Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="align-items: flex-start;">
+            <span class="logo-main">AURA &amp; CO.</span>
+            <span class="logo-sub">GENÈVE • ATELIER</span>
+          </div>
+          <p>
+            An independent maison dedicated to the uncompromised art of haute horlogerie, artisanal leather, and certified high jewelry.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Instagram" aria-label="Instagram">IG</a>
+            <a href="#" class="social-link" title="Pinterest" aria-label="Pinterest">PI</a>
+            <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">LI</a>
+            <a href="#" class="social-link" title="YouTube" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Maison Salons</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Rue du Rhône, Genève</a></li>
+            <li><a href="#hero">New Bond Street, London</a></li>
+            <li><a href="#hero">Madison Avenue, New York</a></li>
+            <li><a href="#hero">The Dubai Mall, Dubai</a></li>
+            <li><a href="#hero">Ginza Six, Tokyo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Client Services</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">White-Glove Courier</a></li>
+            <li><a href="#faq">Authenticity Register</a></li>
+            <li><a href="#faq">Horology Overhaul</a></li>
+            <li><a href="#faq">Bespoke Monogramming</a></li>
+            <li><a href="#faq">Privilege Codes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal &amp; Security</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Ethical Sourcing Treaty</a></li>
+            <li><a href="#hero">Privacy &amp; Data Vault</a></li>
+            <li><a href="#hero">Terms of Acquisition</a></li>
+            <li><a href="#hero">Conflict-Free Guarantees</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AURA &amp; CO. ALL RIGHTS RESERVED. HAUTE HORLOGERIE &amp; ATELIER.
+        </div>
+        <div class="footer-security-badges">
+          <span>🔒 256-Bit Encrypted Vault</span>
+          <span>✦ GIA Certified</span>
+          <span>✦ Swiss Made</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       DRAWERS & MODALS
+       ========================================================================= -->
+
+  <!-- Backdrop -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Shopping Bag Slide-Over Drawer -->
+  <div class="side-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="drawer-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        Shopping Bag
+      </h3>
+      <button class="drawer-close-btn" id="cart-close-btn" aria-label="Close Shopping Bag">✕</button>
+    </div>
+
+    <!-- Free Shipping Indicator -->
+    <div class="free-shipping-bar">
+      <span id="free-shipping-note">Complimentary white-glove courier shipping on orders over $3,000</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="free-shipping-progress"></div>
+      </div>
+    </div>
+
+    <!-- Items List -->
+    <div class="drawer-body" id="cart-items-list">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="drawer-footer">
+      <div id="promo-active-tag" class="promo-active-tag" style="display: none;"></div>
+
+      <div class="promo-form">
+        <input type="text" id="promo-code-input" class="promo-input" placeholder="Privilege Code (e.g. AURA10, VIP2026)" />
+        <button type="button" id="apply-promo-btn" class="promo-btn">Apply</button>
+      </div>
+
+      <div class="cart-totals">
+        <div class="totals-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$ 0</span>
+        </div>
+        <div class="totals-row">
+          <span>White-Glove Courier</span>
+          <span id="cart-shipping-val" style="color: #86efac;">Complimentary</span>
+        </div>
+        <div class="totals-row grand-total">
+          <span>Estimated Total</span>
+          <span class="val" id="cart-total-val">$ 0</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="cart-checkout-btn" style="width: 100%;">
+        Proceed to Acquisition
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Slide-Over Drawer -->
+  <div class="side-drawer" id="wishlist-drawer" role="dialog" aria-modal="true" aria-label="Saved Creations">
+    <div class="drawer-header">
+      <h3 class="drawer-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        Private Collection
+      </h3>
+      <button class="drawer-close-btn" id="wishlist-close-btn" aria-label="Close Wishlist">✕</button>
+    </div>
+
+    <div class="drawer-body" id="wishlist-items-list">
+      <!-- Injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-backdrop" id="quickview-modal" role="dialog" aria-modal="true" aria-label="Quick Product View">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="quickview-close-btn" aria-label="Close Quick View">✕</button>
+      <div id="quickview-content">
+        <!-- Injected dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Multi-Step Checkout Modal -->
+  <div class="modal-backdrop" id="checkout-modal" role="dialog" aria-modal="true" aria-label="Acquisition Checkout">
+    <div class="modal-dialog checkout-dialog">
+      <button class="modal-close-btn" id="checkout-close-btn" aria-label="Close Checkout">✕</button>
+
+      <!-- Stepper Indicator -->
+      <div class="checkout-steps-bar">
+        <div class="step-indicator active" id="step-ind-1">
+          <span class="step-circle">1</span>
+          <span>Delivery</span>
+        </div>
+        <div style="width: 40px; height: 1px; background: var(--border-subtle);"></div>
+        <div class="step-indicator" id="step-ind-2">
+          <span class="step-circle">2</span>
+          <span>Payment</span>
+        </div>
+        <div style="width: 40px; height: 1px; background: var(--border-subtle);"></div>
+        <div class="step-indicator" id="step-ind-3">
+          <span class="step-circle">3</span>
+          <span>Confirmation</span>
+        </div>
+      </div>
+
+      <!-- Step 1: Delivery Details -->
+      <div id="checkout-step-1">
+        <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 0.5rem; text-align: center;">White-Glove Delivery Destination</h3>
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 2rem;">Please provide your confidential delivery details for insured armored courier handover.</p>
+
+        <form id="shipping-form" class="checkout-form-grid">
+          <div class="form-group">
+            <label class="form-label" for="client-full-name">Full Legal Name *</label>
+            <input type="text" id="client-full-name" class="form-input" placeholder="e.g. Lord Julian Hastings" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="client-email">Confidential Email *</label>
+            <input type="email" id="client-email" class="form-input" placeholder="hastings@mayfair.co.uk" required />
+          </div>
+
+          <div class="form-group full-width">
+            <label class="form-label" for="client-address">Private Residence / Salon Address *</label>
+            <input type="text" id="client-address" class="form-input" placeholder="42 Grosvenor Square, Mayfair" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="client-city">City / Jurisdiction *</label>
+            <input type="text" id="client-city" class="form-input" placeholder="London" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="client-country">Country / Sovereign Territory *</label>
+            <input type="text" id="client-country" class="form-input" placeholder="United Kingdom" required />
+          </div>
+
+          <div class="form-group full-width" style="margin-top: 1.2rem;">
+            <button type="button" id="checkout-step1-next" class="btn btn-primary" style="width: 100%;">
+              Continue to Verification &amp; Payment
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 2: Payment & Live 3D Virtual Card -->
+      <div id="checkout-step-2" style="display: none;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 0.5rem; text-align: center;">Bespoke Payment Authorization</h3>
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Total Acquisition Amount: <strong id="checkout-pay-total" style="color: var(--gold-300);">$ 0</strong></p>
+
+        <!-- Live 3D Virtual Luxury Card -->
+        <div class="virtual-card-wrapper">
+          <div class="virtual-card">
+            <div class="card-top-row">
+              <div class="card-chip"></div>
+              <div class="card-brand-name">AURA BLACK TIER</div>
+            </div>
+            <div class="card-number-display" id="virtual-card-number">•••• •••• •••• ••••</div>
+            <div class="card-bottom-row">
+              <div>
+                <div>Cardholder</div>
+                <div class="card-holder-name" id="virtual-card-name">HONORED PATRON</div>
+              </div>
+              <div style="text-align: right;">
+                <div>Expires</div>
+                <div class="card-holder-name" id="virtual-card-exp">MM/YY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="payment-form" class="checkout-form-grid">
+          <div class="form-group full-width">
+            <label class="form-label" for="card-input-number">Card Number</label>
+            <input type="text" id="card-input-number" class="form-input" placeholder="4242 4242 4242 4242" maxlength="19" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="card-input-name">Name on Card</label>
+            <input type="text" id="card-input-name" class="form-input" placeholder="LORD JULIAN HASTINGS" />
+          </div>
+
+          <div class="form-group" style="display: flex; gap: 0.75rem;">
+            <div style="flex: 1;">
+              <label class="form-label" for="card-input-exp">Expires</label>
+              <input type="text" id="card-input-exp" class="form-input" placeholder="MM/YY" maxlength="5" />
+            </div>
+            <div style="flex: 1;">
+              <label class="form-label" for="card-input-cvv">CVV / CVC</label>
+              <input type="password" id="card-input-cvv" class="form-input" placeholder="•••" maxlength="4" />
+            </div>
+          </div>
+
+          <div class="form-group full-width" style="display: flex; gap: 1rem; margin-top: 1.4rem;">
+            <button type="button" id="checkout-step2-back" class="btn btn-outline" style="flex: 1;">
+              Back
+            </button>
+            <button type="button" id="place-order-btn" class="btn btn-primary" style="flex: 2;">
+              Authorize &amp; Finalize Acquisition
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 3: Order Confirmation & Receipt -->
+      <div id="checkout-step-3" style="display: none;">
+        <div class="confirmation-content">
+          <div class="confirmation-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--gold-300); margin-bottom: 0.5rem;">
+            Acquisition Confirmed
+          </h2>
+          <p style="color: var(--text-secondary); max-width: 520px; margin: 0 auto 1.5rem;">
+            Thank you. Your acquisition has been recorded in the Geneva Archives. Your personal atelier concierge will contact you within 2 business hours.
+          </p>
+
+          <!-- Printable Luxury Invoice / Certificate -->
+          <div class="receipt-box" id="order-receipt-box">
+            <!-- Populated dynamically by app.js -->
+          </div>
+
+          <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;">
+            <button class="btn btn-outline" id="print-receipt-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              Print Receipt
+            </button>
+            <button class="btn btn-primary" id="finish-order-btn">
+              Return to Boutique
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Core Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
